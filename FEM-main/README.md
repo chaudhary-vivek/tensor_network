@@ -1,0 +1,17 @@
+# FEM
+
+`FEM` is a python library for solving various combinatorial optimization problems
+using gradient based mean-field annealing. The current build-in problem types are:
+* maximum cut
+* balance minimum cut
+* maximum k-satisfactory
+* vertex cover
+* qubo-like instances
+Some examples can be found on [example notebook](examples/build_in.ipynb).
+
+You can also use `FEM` to solve your own optimization problems as long as 
+the expectation value of the target function can be written as some function of 
+the marginal probability. Please refer to the [customize examples](examples/customize.ipynb) 
+for further details.
+
+You can run the jupyter notebooks in [benchmarks](/benchmarks) to reproduce the main results presented in the paper.
